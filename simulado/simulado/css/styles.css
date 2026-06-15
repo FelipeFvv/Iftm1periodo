@@ -1,0 +1,174 @@
+* { 
+  margin: 0; padding: 0; box-sizing: border-box; 
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #ff6600;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0px;
+}
+nav a { 
+  color: white; 
+  text-decoration: none; 
+  font-size: 15px; 
+  padding: 12px 20px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #ff6600;
+
+ 
+}
+
+.pc{
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
+.topo {
+  background-color: #1a237e;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+.topo-card {
+  background: white;
+  border: 3px solid #ff6600;
+  border-radius: 12px;
+  padding: 36px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+.topo-card h1 { 
+  font-size: 26px; 
+  margin-bottom: 30px; 
+}
+.logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.espec { 
+  color: #ff6600; 
+  font-weight: bold; 
+  font-size: 14px; 
+}
+
+.telefones {
+  background: white;
+  padding: 40px;
+}
+.telefones-grade {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.tel-card { 
+  text-align: center; 
+}
+.tel-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.tel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.tel-card h3 { 
+  font-size: 14px; 
+  margin-bottom: 8px; 
+}
+.tel-card p { 
+  font-size: 12px; 
+  color: #555; 
+  text-align: justify; 
+  margin-bottom: 8px; 
+}
+details summary {
+  color: #ff6600;
+ 
+}
+
+details p {
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 8px;
+}
+
+
+.artigos {
+  padding: 40px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.artigo { 
+  margin-bottom: 30px; 
+}
+.artigo h2 { 
+  font-size: 18px; 
+  margin-bottom: 10px; 
+}
+.artigo p { 
+  font-size: 14px; 
+  color: #444; 
+  line-height: 1.7; 
+  margin-bottom: 10px; 
+  text-align: justify; 
+}
+
+footer {
+  background: #e02a2a;
+  color: rgb(248, 248, 248);
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+
+  .telefones-grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pc{
+    display: none;
+  }
+  
+  .mobile{
+    display: block;
+  }
+  
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .telefones-grade {
+    grid-template-columns: 1fr;
+  }
+}
+
+
