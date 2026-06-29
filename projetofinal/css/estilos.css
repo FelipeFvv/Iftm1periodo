@@ -1,0 +1,344 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+
+header img{
+
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.menu ul{
+ background:#5C4033;
+
+    list-style:none;
+
+    text-align:center;
+
+    margin:0;
+    padding:0;
+
+}
+
+.menu ul li{
+
+    display:inline-block;
+
+}
+
+.menu ul li a{
+    display:inline-block;
+
+    padding:20px 25px;
+
+    color:#FFD54F;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+
+.menu ul li a:hover{
+
+    color:white;
+
+    transform:scale(1.1);
+
+}
+
+
+.menu ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:0;
+    height:3px;
+
+    background:#FFD54F;
+
+    transition:.3s;
+
+}
+
+.menu ul li a:hover::after{
+
+    width:100%;
+
+}
+
+main {
+
+    margin-bottom: 80px;
+}
+
+.secaoPrincipal {
+    background: #FFF4C2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.textoPrincipal {
+    width: 55%;
+}
+
+.textoPrincipal h1 {
+    font-size: 55px;
+    color: #5C4033;
+    margin-bottom: 20px;
+}
+
+.textoPrincipal p {
+    font-size: 18px;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #333;
+}
+
+.textoPrincipal button {
+    margin-top: 25px;
+    background: #F4B400;
+    color: black;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.textoPrincipal button:hover {
+    background: #FF9800;
+    transform: scale(1.05);
+}
+
+.imagemPrincipal {
+    width: 40%;
+    text-align: center;
+}
+
+.imagemPrincipal img {
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.personagens {
+
+    background: white;
+
+    padding: 60px;
+
+    margin-top: 50px;
+
+    border-radius: 20px;
+
+}
+
+.personagens h2 {
+
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #5C4033;
+
+    margin-bottom: 40px;
+
+}
+
+.cards {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+.card {
+
+    background: #FFF8DC;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: .4s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+.card img {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: contain;
+
+}
+
+.card h3 {
+
+    margin: 20px 0;
+
+    color: #5C4033;
+
+}
+
+.card p {
+
+    text-align: justify;
+
+    line-height: 1.6em;
+
+}
+
+.card button {
+
+    margin-top: 20px;
+
+}
+
+.filmes {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #D9EAF7;
+
+    padding: 60px;
+
+    margin-top: 50px;
+
+    border-radius: 20px;
+
+}
+
+.textoFilmes {
+
+    width: 55%;
+
+}
+
+.textoFilmes h2 {
+
+    font-size: 40px;
+
+    color: #3E4A61;
+
+    margin-bottom: 20px;
+
+}
+
+.textoFilmes p {
+
+    font-size: 18px;
+
+    line-height: 1.8em;
+
+    text-align: justify;
+
+}
+
+.textoFilmes ul {
+
+    margin-top: 25px;
+
+    margin-left: 25px;
+
+}
+
+.textoFilmes li {
+
+    margin-bottom: 15px;
+
+    font-size: 18px;
+
+}
+
+.imagemFilmes {
+
+    width: 40%;
+
+    text-align: center;
+
+}
+
+.imagemFilmes img {
+
+    width: 100%;
+
+    max-width: 380px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+}
+
+
+footer {
+    background: #5C4033;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+@media (max-width: 768px) {
+
+    .secaoPrincipal,
+    .filmes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textoPrincipal,
+    .textoFilmes,
+    .imagemPrincipal,
+    .imagemFilmes {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+}
