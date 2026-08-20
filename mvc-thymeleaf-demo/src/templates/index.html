@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio de Números</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 80px;
+            background-color: #f4f6f8;
+        }
+        img {
+            width: 200px;
+            margin-bottom: 30px;
+        }
+        .botao {
+            display: inline-block;
+            padding: 14px 32px;
+            font-size: 18px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .botao:hover {
+            background-color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+    <h1 th:text="${mensagem}">Mensagem</h1>
+
+    <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" alt="Loteria">
+
+    <p>Clique no botão abaixo para sortear 6 números!</p>
+
+    <a class="botao" th:href="@{/sorteio}">Sortear números</a>
+</body>
+</html>
