@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Prática: Gerador de Crachá</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <main>
+        <h1>Cadastro do Crachá</h1>
+
+        <form action="">
+            <label for="primeiroNome">Primeiro Nome:</label>
+            <input type="text" id="primeiroNome">
+
+            <label for="restanteNome">Restante do Nome:</label>
+            <input type="text" id="restanteNome">
+
+            <label for="cargo">Cargo (Professor ou Desenvolvedor):</label>
+            <input type="text" id="cargo">
+
+            <label>Escolha a Minicurso:</label>
+            <div class="botoes-minicurso">
+                <input type="button" value="HTML5" id="btnHtml5">
+                <input type="button" value="CSS3" id="btnCss3">
+                <input type="button" value="JavaScript" id="btnJs">
+            </div>
+        </form>
+
+        <h2>Crachá gerado</h2>
+
+        <div id="cracha">
+            <p id="nomeCompleto"></p>
+            <p id="iniciais"></p>
+            <div id="logoMinicurso"></div>
+            <p id="cargoExibido"></p>
+            <p id="sala"></p>
+        </div>
+    </main>
+</body>
+
+</html>
