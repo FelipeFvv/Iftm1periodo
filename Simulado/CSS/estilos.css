@@ -1,0 +1,28 @@
+fieldset {
+    width: 500px;
+    margin: 0 auto;
+    border: 3px solid green;
+    color: green;
+    text-align: center;
+}
+
+legend {
+    margin: 0 auto;
+}
+
+fieldset div {
+    margin: 15px 0;
+}
+
+#nome {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid green;
+}
+
+#entrar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 80px;
+}
