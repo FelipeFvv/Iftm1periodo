@@ -1,9 +1,0 @@
-main {
-    display: flex;
-    justify-content: center;
-}
-
-main div {
-    margin: 0 20px;
-    text-align: center;
-}
